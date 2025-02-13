@@ -10,9 +10,11 @@ GEMINI_API_KEY=your_api_key_here
 
 ## Lancement du serveur Symfony
 
-Pour démarrer le serveur Symfony, exécutez la commande suivante :
+Pour démarrer le serveur Symfony, exécutez les commandes suivante :
 
 ```sh
+Symfony console doctrine:database:create
+symfony console doctrine:migration:migrate
 symfony server:start --port=8001
 ```
 
